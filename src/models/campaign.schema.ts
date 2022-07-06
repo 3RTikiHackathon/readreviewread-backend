@@ -3,10 +3,10 @@ import { Document, Types } from 'mongoose';
 import { Book } from './book.schema';
 import { User } from './user.schema';
 
-export type PostDocument = Post & Document;
+export type CampaignDocument = Campaign & Document;
 
 @Schema()
-export class Post {
+export class Campaign {
   @Prop()
   _id: Types.ObjectId;
 
@@ -20,4 +20,4 @@ export class Post {
   content: string;
 }
 
-export const PostSchema = SchemaFactory.createForClass(Post);
+export const CampaignSchema = SchemaFactory.createForClass(Campaign);
